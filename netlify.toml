@@ -1,0 +1,4 @@
+[[redirects]]
+from = "/*"
+to = "/AQI.html"
+status = 200
