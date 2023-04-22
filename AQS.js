@@ -43,7 +43,7 @@ export async function getSearchData() {
             const sTimeup = sTime.toLocaleTimeString('en-US');
             html += `<div class="${getCategorisedData(aqi).className}">
                                 <div class="header">
-                                    <h1 class="aqi_index"> ${aqi} </h1>
+                                    <h1 class="aqi_index"> AQI: ${aqi} </h1>
                                     <p class="aqiImpact">${getCategorisedData(aqi).impact}</p>
                                 </div>
                                 <div class="cont">
