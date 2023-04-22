@@ -43,12 +43,15 @@ export async function getSearchData() {
             const sTimeup = sTime.toLocaleTimeString('en-US');
             html += `<div class="${getCategorisedData(aqi).className}">
                                 <div class="header">
-                                    <h1 class="aqi_index"> ${aqi} </h1>
+                                    <h1 class="aqi_index"> AQI: ${aqi} </h1>
                                     <p class="aqiImpact">${getCategorisedData(aqi).impact}</p>
                                 </div>
                                 <div class="cont">
-                                    <p class="city">  ${element.station.name} </p>
-                                    <p> Updated On : ${sTimeup} </p>
+                                    <p class="city">  ${city} </p>
+                                    <p> Updated On : ${uptime} </p>
+                                    <p> Current Time : ${getDayName(Date(), "en-US")},${currentTime(Date())} </p>
+                                    <p> Temperature : ${parseFloat(temp).toFixed(1)}</p>
+                                    <p> Wind Speed : ${parseFloat(wind).toFixed(2)}</p>
                                 </div>
                             </div>` })
     }
