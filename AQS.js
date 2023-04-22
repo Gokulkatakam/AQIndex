@@ -49,7 +49,6 @@ export async function getSearchData() {
                                 <div class="cont">
                                     <p class="city">  ${element.station.name} </p>
                                     <p> Updated On : ${sTimeup} </p>
-                                    <p> Temperature : ${parseFloat(temp).toFixed(1)}</p>
                                 </div>
                             </div>` })
     }
